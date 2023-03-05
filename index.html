@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <link rel="stylesheet" href="src/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Plan</title>
+</head>
+<body>
+    <h1 class="title">What's your plan!</h1>
+
+    <form id="login-form" class="hidden">
+        <input id="login-id" placeholder="Write your name" required type="text"/>
+        <button id="login-button" >Log In</button>
+    </form>
+    
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="clock">
+        0000년 00월 00일(0요일) 00:00:00
+    </div>
+    
+    <form id="todo-form" class="hidden">
+        <input type="text" placeholder="Write a To Do" />
+        <button id="todo-button">Do!</button>
+        <button id="logout-button">Log Out</button>
+    </form>
+    <ul id="todo-list" class="hidden"></ul>
+
+    <script src="https://kit.fontawesome.com/90b2e55def.js" crossorigin="anonymous"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/login.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/weather.js"></script>
+</body>
+</html>
